@@ -62,10 +62,10 @@ public class Macetero {
 	}
 	
 	public double area () {
-		area = PI*(generatriz()*(getRsuperior()+getRinferior())+Math.pow(getRsuperior(), 2)+Math.pow(getRinferior(), 2));
+		area = PI*(generatriz()*(getRsuperior()+getRinferior())+Math.pow(getRsuperior(), 2)+Math.pow(getRinferior(),2));
 		return area;
 	}
-	public boolean mayorVolumen (Macetero Curie) {
-		return (volumen()>Curie.volumen());
+	public boolean mayorVolumen (Macetero Curie) {		//RECIBE COMO PARÁMETRO () UN MACETERO QUE SE LLAMARÁ CURIE
+		return (volumen()>Curie.volumen());		//CALCULA EL VOLUMEN DEL MACETERO CON EL QUE SE HACE LA LLAMADA Y LO COMPARA CON EL VOLUMEN DEL MACETERO QUE SE PASA COMO PARÁMETRO
 	}
 }
