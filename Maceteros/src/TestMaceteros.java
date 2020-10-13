@@ -17,6 +17,10 @@ public class TestMaceteros {
 		System.out.printf("Generatriz, volumen y área de Jackson: %f, %f, %f.\n",Jackson.generatriz(),Jackson.volumen(),Jackson.area());			//MUESTRA CARACTERÍSTICAS DE JACKSON
 	
 		if (Einstein.mayorVolumen(Jackson)) {		//LLAMA MÉTODO MAYORVOLUMEN() Y ENTREGA COMO PARÁMETRO JACKSON ==> EL MACETERO JACKSON = MACETERO CURIE (DE MACETERO.JAVA)
+			/* 
+			 * RECORDEMOS: EL MÉTODO MAYORVOLUMEN() DEVUELVE UN VALOR DE TIPO BOOLEAN (TRUE/FALSE). POR LO TANTO LO PODEMOS UTILIZAR COMO CONDICIÓN EN UN IF.
+			 * SI LA SALIDA DEL MÉTODO MAYORVOLUMEN() ES TRUE, SE PROCEDE CON LAS ACCIONES DE LA CONDICIÓN, PERO SI ES FALSE SALTAREMOS DIRECTAMENTE A LAS ÓRDENES CONTENIDAS EN EL ELSE.
+			 */
 			System.out.print("El volumen de Einstein es mayor al de Jackson.");
 		} else {
 			System.out.print("El volumen de Einstein es menor o igual al de Jackson");
